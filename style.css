@@ -26,12 +26,15 @@ body.night { background: var(--bg-night); }
 }
 h1 { margin-bottom: 1rem; }
 
-#searchForm {
+#searchForm,
+.lat-lon-form {
   display: flex;
   gap: .5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
-#cityInput {
+#cityInput,
+#latInput,
+#lonInput {
   flex: 1;
   padding: .6rem .8rem;
   border: none;

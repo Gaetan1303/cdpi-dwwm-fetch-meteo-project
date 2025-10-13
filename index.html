@@ -10,8 +10,16 @@
   <main class="container">
     <h1>Météo</h1>
 
+    <!-- Recherche par ville -->
     <form id="searchForm" autocomplete="off">
       <input id="cityInput" type="text" placeholder="Nom d’une ville…" required />
+      <button type="submit">🔍</button>
+    </form>
+
+    <!-- NOUVEAU : recherche par lat/lon -->
+    <form id="latLonForm" autocomplete="off" class="lat-lon-form">
+      <input id="latInput" type="number" step="any" placeholder="Latitude"  required />
+      <input id="lonInput" type="number" step="any" placeholder="Longitude" required />
       <button type="submit">🔍</button>
     </form>
 
