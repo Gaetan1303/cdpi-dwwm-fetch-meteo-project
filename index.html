@@ -10,18 +10,22 @@
   <main class="container">
     <h1>Météo</h1>
 
-    <!-- Recherche par ville -->
+    <!-- Autocomplétion ville -->
     <form id="searchForm" autocomplete="off">
-      <input id="cityInput" type="text" placeholder="Nom d’une ville…" required />
+      <input id="cityInput" type="text" placeholder="Nom d’une ville…" required list="cityList" />
+      <datalist id="cityList"></datalist>
       <button type="submit">🔍</button>
     </form>
 
-    <!-- NOUVEAU : recherche par lat/lon -->
+    <!-- Lat / Lon -->
     <form id="latLonForm" autocomplete="off" class="lat-lon-form">
       <input id="latInput" type="number" step="any" placeholder="Latitude"  required />
       <input id="lonInput" type="number" step="any" placeholder="Longitude" required />
       <button type="submit">🔍</button>
     </form>
+
+    <!-- Choix multiple éventuel -->
+    <div id="choiceBox" class="hidden"></div>
 
     <section id="weather" class="hidden">
       <p id="cityName"></p>

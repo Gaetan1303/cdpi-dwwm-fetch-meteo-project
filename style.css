@@ -64,3 +64,34 @@ button {
 #weather img { width: 80px; height: 80px; }
 #temperature { font-size: 2rem; margin: .2rem 0; }
 .hidden { display: none; }
+
+
+/* ----- autocomplétion + choix multiple ----- */
+#cityList option {
+  font-size: .9rem;
+}
+
+#choiceBox {
+  background: var(--card);
+  border-radius: 8px;
+  padding: .8rem;
+  margin: .5rem 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.choice-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .4rem .6rem;
+  margin: .2rem 0;
+  background: rgba(255,255,255,.2);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background .2s;
+}
+.choice-line:hover { background: rgba(255,255,255,.35); }
+
+.choice-name  { font-weight: 600; }
+.choice-admin { font-size: .8rem; opacity: .85; }
